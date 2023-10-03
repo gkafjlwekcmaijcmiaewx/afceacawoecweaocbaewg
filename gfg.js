@@ -106,6 +106,9 @@ function apply_gravity() {
 	document.addEventListener('keydown', (e) => {
 	if (e.key == 'ArrowUp' || e.key == ' ') {
 		bird_dy = -7.6;
+	window.onkeydown = function(e) {
+    return ev.keyCode !== 32 && ev.key !== " ";
+}
 	}
 	});
 
